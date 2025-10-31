@@ -59,18 +59,18 @@ function App() {
 
       <hr style={{ margin: '40px 0' }} />
 
-      <div className="walkthrough">
+      <div className="walkthrough" style={{ textAlign: 'left' }}>
         <h2>How This Model Was Built</h2>
-        <ul style={{ textAlign: 'left' }}>
+        <ul>
           <li><strong>Dataset:</strong> IMDB movie reviews with 50/50 positive/negative balance.</li>
-          <li><strong>Cleaning:</strong> HTML tags, punctuation, and stopwords removed; lowercased.</li>
-          <li><strong>Vectorization:</strong> Used TF-IDF with unigrams and bigrams.</li>
+          <li><strong>Cleaning:</strong> Removed HTML tags, punctuation, stopwords; converted to lowercase.</li>
+          <li><strong>Vectorization:</strong> TF-IDF with unigrams and bigrams.</li>
           <li><strong>Model:</strong> Trained using Logistic Regression and improved with Linear SVC.</li>
-          <li><strong>Evaluation:</strong> 90% accuracy with detailed confusion matrix and metrics.</li>
-          <li><strong>Deployment:</strong> Model integrated into this app for real-time sentiment prediction.</li>
+          <li><strong>Evaluation:</strong> Achieved 90% accuracy with confusion matrix and evaluation metrics.</li>
+          <li><strong>Deployment:</strong> Integrated into this React app with real-time predictions.</li>
         </ul>
         <p style={{ marginTop: '1em' }}>
-          View the full notebook for code, preprocessing steps, and model evaluations.
+          📓 See the full notebook for preprocessing steps, code, and model evaluation.
         </p>
       </div>
     </div>
